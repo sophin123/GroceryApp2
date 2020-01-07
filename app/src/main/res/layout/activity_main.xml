@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/recycler_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item List"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:id="@+id/layouttop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/edittext_name"
+        android:layout_marginTop="10dp">
+
+
+        <Button
+            android:id="@+id/button_decrease"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="#1E8A7B" />
+
+        <TextView
+            android:id="@+id/textview_amount"
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/button_increase"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:layout_marginRight="10dp"
+            android:background="#1E8A7B"/>
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="add"
+            android:background="#1E8A7B"/>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@drawable/recycler_background"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layouttop"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"/>
+
+
+    <Button
+        android:id="@+id/ViewListBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#1E8A7B"
+        android:padding="10dp"
+        android:text="View List"
+        android:textSize="20sp" />
+
+</RelativeLayout>
