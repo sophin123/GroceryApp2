@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.example.groceryapp.MainAcitivty.mainpage.notepadpage.Main2Activity
+import com.example.groceryapp.MainAcitivty.mainpage.mainpage.secondactivity.Main2Activity
 import com.example.groceryapp.R
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -73,8 +73,8 @@ open class MainActivity : AppCompatActivity() {
         buttonIncrease.setOnClickListener { increase() }
         buttonDecrease.setOnClickListener { decrease() }
         buttonAdd.setOnClickListener { addItem() }
-        ViewListBtn.setOnClickListener{changeIntent()}
-
+        ViewListBtn.setOnClickListener{
+            changeIntent()}
     }
 
     private fun increase() {
@@ -90,7 +90,7 @@ open class MainActivity : AppCompatActivity() {
     }
 
     private fun addItem() {
-        if (mEditTextName!!.text.toString().trim { it <= ' ' }.length == 0 || mAmount == 0) {
+        if (mEditTextName!!.text.toString().trim { it <= ' ' }.isEmpty() || mAmount == 0) {
             return
         }
         val name = mEditTextName!!.text.toString()
