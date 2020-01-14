@@ -1,4 +1,4 @@
-package com.example.groceryapp.MainAcitivty.mainpage.mainpage
+package com.example.groceryapp.MainAcitivty.mainpage.mainpage.GroceryActivity
 
 import GroceryContract
 import android.content.ContentValues
@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.example.groceryapp.MainAcitivty.mainpage.mainpage.secondactivity.Main2Activity
+import com.example.groceryapp.MainAcitivty.mainpage.mainpage.GroceryActivity.NoteActivity.Main2Activity
 import com.example.groceryapp.R
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -111,8 +111,9 @@ open class MainActivity : AppCompatActivity() {
     }
 
     private fun changeIntent(){
-        val intent = Intent(this, Main2Activity::class.java )
+        var intent = Intent(this, Main2Activity::class.java)
         startActivity(intent)
+
     }
 
     private val allItems: Cursor

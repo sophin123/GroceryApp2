@@ -1,4 +1,4 @@
-package com.example.groceryapp.MainAcitivty.mainpage.mainpage
+package com.example.groceryapp.MainAcitivty.mainpage.mainpage.GroceryActivity
 
 import android.content.Context
 import android.database.Cursor
