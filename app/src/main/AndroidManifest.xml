@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".MainAcitivty.mainpage.mainpage.GroceryActivity.NoteActivity.EditDataActivity"></activity>
         <activity android:name=".MainAcitivty.mainpage.mainpage.GroceryActivity.NoteActivity.ListDataActivity"></activity>
         <activity android:name=".MainAcitivty.mainpage.mainpage.GroceryActivity.NoteActivity.Main2Activity" />
 

@@ -1,5 +1,6 @@
 package com.example.groceryapp.MainAcitivty.mainpage.mainpage.GroceryActivity.NoteActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.util.Log;
@@ -48,7 +49,30 @@ public class ListDataActivity extends AppCompatActivity {
         final ListAdapter adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, listData);
         mListView.setAdapter(adapter);
 
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String name = adapterView.getItemAtPosition(i).toString();
+                Log.d(TAG, "onItemClick: You Clicked on " + name);
 
+                Cursor data = mDatabaseHelper.getItemID(name);
+                int itemID = -1;
+                while (data.moveToNext()){
+                    itemID = data.getInt(0);
+                }
+                if(itemID > -1){
+                    Log.d(TAG, "onItemClick: The ID is: " + itemID);
+                    Intent editScreenIntent = new Intent(ListDataActivity.this, EditDataActivity.class);
+                    editScreenIntent.putExtra("id", itemID);
+                    editScreenIntent.putExtra("name", name);
+                    startActivity(editScreenIntent);
+                }else
+                {
+                    toastMessage("No ID associated with that item");
+                }
+            }
+
+        });
     }
 
     private void toastMessage(String message){
