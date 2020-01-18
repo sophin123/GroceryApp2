@@ -8,18 +8,18 @@
         android:id="@+id/textview_amount_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0"
-        android:textSize="30sp"
-        android:textColor="#FFFFFF"/>
+        android:text="@string/_02"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
 
     <TextView
         android:id="@+id/textview_name_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="Empty Item"
-        android:textSize="30sp"
+        android:text="@string/empty_item"
+        android:textSize="20sp"
         android:layout_marginLeft="8dp"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#000000"/>
 
 </LinearLayout>

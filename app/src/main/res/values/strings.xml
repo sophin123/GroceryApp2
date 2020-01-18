@@ -8,4 +8,16 @@
     <string name="title_activity_main2">title_activity_main2</string>
     <string name="title_activity_view_list_items">title_activity_view_list</string>
     <string name="title_activity_main3">Main3Activity</string>
+    <string name="empty_item">Empty Item</string>
+    <string name="_01">0</string>
+    <string name="delete">DELETE</string>
+    <string name="save">SAVE</string>
+    <string name="item_list">Item List</string>
+    <string name="_02">0</string>
+    <string name="add">add</string>
+    <string name="textview">TextView</string>
+    <string name="add_item">Add Item</string>
+    <string name="enter_text_here">Enter Text here!!</string>
+    <string name="view">View!!</string>
+    <string name="add_activitymain2">Add!!</string>
 </resources>

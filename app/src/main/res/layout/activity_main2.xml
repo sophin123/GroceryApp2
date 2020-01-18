@@ -4,14 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#000000"
     tools:context=".MainAcitivty.mainpage.mainpage.GroceryActivity.NoteActivity.Main2Activity">
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_height="40dp"
         android:textSize="20dp"
-        android:hint="Enter Text here!!"
+        android:textColor="#E2DADA"
+        android:textColorHint="#E2DADA"
+        android:background="@drawable/edit_round"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:hint="@string/enter_text_here"
         android:id="@+id/noteEditText"/>
 
     <LinearLayout
@@ -23,14 +28,20 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add!!"
+            android:text="@string/add_activitymain2"
+            android:textSize="18dp"
+            android:textColor="#E2DADA"
+            android:background="@drawable/additem_round"
             android:layout_margin="10dp"
             android:id="@+id/btnadd"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="View!!"
+            android:text="@string/view"
+            android:textSize="18dp"
+            android:textColor="#E2DADA"
+            android:background="@drawable/additem_round"
             android:layout_margin="10dp"
             android:id="@+id/btnview"/>
     </LinearLayout>

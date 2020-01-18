@@ -2,17 +2,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#000000">
 
     <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:textAlignment="center"
         android:inputType="textPersonName"
+        android:hint="Text Here"
+        android:textColorHint="#E2DADA"
+        android:tooltipText="Edited Text Appear Here!!"
         android:ems="10"
+        android:background="@drawable/edit_round"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="78dp"
+        android:textColor="#E2DADA"
         android:id="@+id/editable_item"/>
 
     <LinearLayout
@@ -26,14 +34,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="DELETE"
-            android:id="@+id/btnDelete"/>
+            android:background="@drawable/edit_round"
+            android:textColor="#E2DADA"
+            android:text="@string/delete"
+            android:id="@+id/btnDelete"
+            android:layout_marginRight="10dp"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SAVE"
+            android:text="@string/save"
             android:id="@+id/btnSave"
+            android:background="@drawable/edit_round"
+            android:textColor="#E2DADA"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"/>
 
     </LinearLayout>
