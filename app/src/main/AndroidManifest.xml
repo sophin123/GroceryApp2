@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.groceryapp">
 
     <application
@@ -8,14 +9,14 @@
         android:label="GroceryApp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        tools:replace="android:label"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".MainAcitivty.mainpage.mainpage.GroceryActivity.NoteActivity.EditDataActivity"></activity>
-        <activity android:name=".MainAcitivty.mainpage.mainpage.GroceryActivity.NoteActivity.ListDataActivity"></activity>
+        <activity android:name=".MainAcitivty.mainpage.mainpage.GroceryActivity.MainActivity"></activity>
+        <activity android:name=".MainAcitivty.mainpage.mainpage.GroceryActivity.NoteActivity.EditDataActivity" />
+        <activity android:name=".MainAcitivty.mainpage.mainpage.GroceryActivity.NoteActivity.ListDataActivity" />
         <activity android:name=".MainAcitivty.mainpage.mainpage.GroceryActivity.NoteActivity.Main2Activity" />
-
         <activity
-            android:name=".MainAcitivty.mainpage.mainpage.GroceryActivity.MainActivity"
+            android:name=".MainAcitivty.mainpage.mainpage.GroceryActivity.SplashScreenActivity"
             android:label="MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -24,7 +25,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
