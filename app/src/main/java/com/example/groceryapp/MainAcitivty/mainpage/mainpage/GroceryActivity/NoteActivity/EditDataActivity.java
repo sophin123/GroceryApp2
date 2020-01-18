@@ -48,6 +48,7 @@ public class EditDataActivity extends AppCompatActivity {
                 String item = editable_item.getText().toString();
                 if(!item.equals("")){
                     mDatabaseHelper.updateName(item, selectedID, selectedName);
+                    toastMessage("Data being saved");
 
                 }else{
                     toastMessage("You must enter a name");

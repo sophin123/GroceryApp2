@@ -46,7 +46,7 @@ public class ListDataActivity extends AppCompatActivity {
             listData.add(data.getString(1));
         }
 
-        final ListAdapter adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, listData);
+        final ListAdapter adapter = new ArrayAdapter<>(this,android.R.layout.simple_expandable_list_item_1, listData);
         mListView.setAdapter(adapter);
 
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
