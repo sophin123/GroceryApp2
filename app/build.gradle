@@ -24,6 +24,10 @@ android {
 }
 
 dependencies {
+
+    //Circular ImageView
+    implementation 'com.mikhaellopez:circularimageview:4.1.1'
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
@@ -37,7 +41,9 @@ dependencies {
 
     //SplashScreen Dependencies
     implementation 'gr.pantrif:easy-android-splash-screen:0.0.1'
-    
+
+
+
     //this is for room database
     testImplementation 'android.arch.persistence.room:testing:1.1.1'
     implementation 'android.arch.paging:runtime:1.0.0'
