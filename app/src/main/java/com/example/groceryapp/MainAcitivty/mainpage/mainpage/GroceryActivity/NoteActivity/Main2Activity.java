@@ -37,7 +37,7 @@ public class Main2Activity extends AppCompatActivity {
                     AddData(newEntry);
                     noteeditText.setText("");
                 }else {
-                    toastMessage("You must put something in the text field");
+                    toastMessage(getResources().getString(R.string.btnAddError));
                 }
             }
         });
@@ -55,7 +55,7 @@ public class Main2Activity extends AppCompatActivity {
         boolean insertData = mDatabaseHelper.addData(newEntry);
 
         if(insertData){
-            toastMessage("Data Entered Successfully");
+            toastMessage("@");
         }else {
             toastMessage("Something went wrong");
         }

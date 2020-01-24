@@ -20,4 +20,24 @@
     <string name="enter_text_here">Enter Text here!!</string>
     <string name="view">View!!</string>
     <string name="add_activitymain2">Add!!</string>
+    <string name="enter_grocery_item">Enter Grocery Item!!</string>
+    <string name="add_notes">Add Notes!</string>
+    <string name="make_it_easy">Make it easy!!</string>
+    <string name="create_your_own_list">Create your own list!!</string>
+    <string name="welcome">Welcome!!</string>
+
+
+    <string name="btnAddError" translatable="false">You must put something in the text field</string>
+    <string name="DataEntered" translatable="false">Something went wrong</string>
+
+
+    //Button save string
+
+    <string name="btnsaveString" translatable="false">Data being saved</string>
+    <string name="btnsaveerrorString" translatable="false">You must enter a name</string>
+
+    //Button delete string
+
+    <string name="btndeletestring" translatable="false">removed from database</string>
+
 </resources>

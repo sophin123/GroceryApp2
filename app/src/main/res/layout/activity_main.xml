@@ -11,7 +11,7 @@
         android:id="@+id/edittext_name"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:hint="Enter Grocery Item!!"
+        android:hint="@string/enter_grocery_item"
         android:textColorHint="#E2DADA"
         android:background="@drawable/edit_round"
         android:textAlignment="center"
@@ -87,7 +87,7 @@
             android:layout_width="98dp"
             android:layout_height="33dp"
             android:background="@drawable/additem_round"
-            android:text="ADD ITEM"
+            android:text="@string/add_item"
             android:textColor="#E2DADA"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -116,8 +116,9 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:background="@drawable/additem_round"
-        android:text="View List"
+        android:text="@string/add_notes"
         android:textColor="#E9E1E1"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:padding="10dp"/>
 
 </RelativeLayout>
